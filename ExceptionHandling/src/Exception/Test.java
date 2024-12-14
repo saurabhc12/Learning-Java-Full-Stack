@@ -10,6 +10,11 @@ public class Test {
 		catch(ArithmeticException e) {	
 			System.out.println(e);
 			System.out.println("infinity");}
+
+		// 1. try - catch
+		// 2. try - catch - finally
+		// 3. try - finally
+		
 		System.out.println(9/2);
 		System.out.println(6/5);
 	}
