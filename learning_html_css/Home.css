@@ -5,9 +5,47 @@ h4{
 }
 div.block1{
     color: pink;
-
-    
 }
 div.block2{
-    text-align: center;
+        text-align: center;
+    }
+
+.text-reveal {
+        animation: fadeInOut 3s infinite; /* Smooth fade-in/out animation every 3 seconds */
+    }
+    
+    /* Keyframes for fade-in/out animation */
+@keyframes fadeInOut {
+        0%, 100% {
+            opacity: 0;
+            transform: translateY(20px); /* Start below and fade out */
+        }
+        50% {
+            opacity: 1;
+            transform: translateY(0); /* Fully visible in the center */
+        }
+        
+    }
+    
+
+
+/* Custom Navbar Styling */
+.navbar {
+    background-color: #1378e3; /* Blue background for navbar */
+}
+.navbar .nav-link, .navbar .navbar-brand {
+    color: white !important; /* White text for links and brand */
+}
+.navbar .nav-link:hover {
+    color: #ffc107 !important; /* Yellow text on hover */
+}
+/* Styling for Carousel */
+.carousel img {
+    height: 500px; /* Set a fixed height for carousel images */
+    object-fit: cover; /* Ensure the images fill the space proportionally */
+}
+.carousel-caption h5, .carousel-caption p {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+    padding: 10px;
+    border-radius: 5px;
 }
