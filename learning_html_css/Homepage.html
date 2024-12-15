@@ -3,30 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
+    <title>Home Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
     <style>
-        div{
-            text-align: center;
+        /* Custom Navbar Styling */
+        .navbar {
+            background-color: #1378e3; /* Blue background for navbar */
+        }
+        .navbar .nav-link, .navbar .navbar-brand {
+            color: white !important; /* White text for links and brand */
+        }
+        .navbar .nav-link:hover {
+            color: #ffc107 !important; /* Yellow text on hover */
+        }
+        /* Styling for Carousel */
+        .carousel img {
+            height: 500px; /* Set a fixed height for carousel images */
+            object-fit: cover; /* Ensure the images fill the space proportionally */
+        }
+        .carousel-caption h5, .carousel-caption p {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+            padding: 10px;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <div style=background-color:gainsboro;>
-        <h2>
-            Welcome to our website.
-        </h2>
-    </div>
-    <h3>
-        <div style="text-align: right;">
-            <a href="Homepage.html">Home</a>  
-            <a href="Searchpage.html">Search</a>   
-            <a href="Aboutpage.html">About</a>
-            <a href="Loginpage.html">Login</a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Service 1</a></li>
+                            <li><a class="dropdown-item" href="#">Service 2</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Service 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
         </div>
-    </h3>
-    <!-- <div>
-        <img src="" alt="Pic" width=" " height="200px0px">
-    </div> -->
-    
+    </nav>
+
+    <br><br>
+
+    <!-- Carousel -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <img src="ajinkyatara.jpg" class="d-block w-100" alt="Ajinkyatara Fort">
+                <div class="carousel-caption">
+                    <h5>Ajinkyatara Fort</h5>
+                    <p>A historic fort located in Satara, Maharashtra.</p>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <img src="vijaydurg_fort.jpg" class="d-block w-100" alt="Vijaydurg Fort">
+                <div class="carousel-caption">
+                    <h5>Vijaydurg Fort</h5>
+                    <p>Known for its rich history and strategic location.</p>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <img src="gad_rajacha.jpg" class="d-block w-100" alt="Gad Rajacha">
+                <div class="carousel-caption">
+                    <h5>Gad Rajacha</h5>
+                    <p>Explore the heritage and legacy of Rajacha Fort.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
