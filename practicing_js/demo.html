@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h3>Learning javascript</h3>
+        <br>
+
+
+
+
+        <script>
+            //let, var
+         let a=10;
+         let b="JS";
+         let d=a+b;
+
+         document.write("addition ",a," and ",b, " is ",d);
+         document.write("<br>","<br>");      
+
+         let jay=22;
+         let viru=20;
+         if(jay>viru){
+            document.write("jay is orlder than viru");
+         }else{
+            document.write("viru is older than jay");
+         }
+         document.write("<br>","<br>");      
+
+
+         for(var i=0;i<=10;i++){
+            if(i%2==0){
+                document.write(i,"<br>");
+            }
+         }
+         document.write("<br>");      
+
+         //array
+         let arr = [2,4,6,8,0];
+         document.write(arr,"<br>","<br>");
+
+         //object creation
+         let s = {name:"ram",roll:1,marks:99};
+         document.write("<br>",s.name,"<br>","<br>");
+
+         //Fuction creation
+         function addTwo(a,b){
+            let c=a+b;
+            document.write("display locally = ",c);
+            return c; //if we didn't return value it will not displayed as globally
+         } 
+        //  addTwo(30,40.5);
+         let c = addTwo(50,40); // have to difine c globally
+         document.write("<br>","<br>");
+         document.write("dispying globlly = ",c);
+
+
+
+        </script>
+    </body>
+</html>
