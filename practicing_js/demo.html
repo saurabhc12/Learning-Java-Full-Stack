@@ -11,56 +11,96 @@
     </head>
     <body>
         <h3>Learning javascript</h3>
-        <br>
 
+        
+        <h2>addition of two elements</h2>
+        number1 : <input type="text" name="num1" id="num1"><br><br>
+        number2 : <input type="text" name="num2" id="num2"><br>
+        <br>
+        <button type="button" onclick="add()">addition</button><br><br>
+        <!-- <p id="p1">find your result</p><br><br> -->
+         <p id="p1">you will get result here</p>
+
+         <hr>
+
+        <h3 id="color">Change the color of text</h3><br>
+        <button type="button" onclick="yellow()">Change to Yello</button>
+        <button type="button" onclick="red()">Change to Red</button>
+        <button type="button" onclick="black()">back to normal</button>
 
 
 
         <script>
-            //let, var
-         let a=10;
-         let b="JS";
-         let d=a+b;
 
-         document.write("addition ",a," and ",b, " is ",d);
-         document.write("<br>","<br>");      
-
-         let jay=22;
-         let viru=20;
-         if(jay>viru){
-            document.write("jay is orlder than viru");
-         }else{
-            document.write("viru is older than jay");
-         }
-         document.write("<br>","<br>");      
-
-
-         for(var i=0;i<=10;i++){
-            if(i%2==0){
-                document.write(i,"<br>");
+            function yellow(){
+                document.getElementById("color").style.color="Yellow";
             }
-         }
-         document.write("<br>");      
+            function red(){
+                document.getElementById("color").style.color="Red";
+            }
+            function black(){
+                document.getElementById("color").style.color="black";
+            }
 
-         //array
-         let arr = [2,4,6,8,0];
-         document.write(arr,"<br>","<br>");
+            
+            
+            function add(){
+                let a = document.getElementById("num1").value;
+                let b = document.getElementById("num2").value;
+                let n1 = parseInt(a); // this funtion conver text value to integer
+                let n2 = parseInt(b);
+                document.getElementById("p1").innerHTML=n1+n2;
+                //document.getElementById("p1").innerHTML=msg;
+                }  
+            
+            
 
-         //object creation
-         let s = {name:"ram",roll:1,marks:99};
-         document.write("<br>",s.name,"<br>","<br>");
+        {//     //let, var
+        //  let a=10;
+        //  let b="JS";
+        //  let d=a+b;
 
-         //Fuction creation
-         function addTwo(a,b){
-            let c=a+b;
-            document.write("display locally = ",c);
-            return c; //if we didn't return value it will not displayed as globally
-         } 
-        //  addTwo(30,40.5);
-         let c = addTwo(50,40); // have to difine c globally
+        //  document.write("addition ",a," and ",b, " is ",d);
+        //  document.write("<br>","<br>");      
+
+
+        //  let jay=22;
+        //  let viru=20;
+        //  if(jay>viru){
+        //     document.write("jay is orlder than viru");
+        //  }else{
+        //     document.write("viru is older than jay");
+        //  }
+        //  document.write("<br>","<br>");      
+
+
+        //  for(var i=0;i<=10;i++){
+        //     if(i%2==0){
+        //         document.write(i,"<br>");
+        //     }
+        //  }
+        //  document.write("<br>");      
+
+        //  //array
+        //  let arr = [2,4,6,8,0];
+        //  document.write(arr,"<br>","<br>");
+
+        //  //object creation
+        //  let s = {name:"ram",roll:1,marks:99};
+        //  document.write("<br>",s.name,"<br>","<br>");
+
+        //  //Fuction creation
+        //  function addTwo(a,b){
+        //     let c=a+b;
+        //     document.write("display locally = ",c);
+        //     return c; //if we didn't return value it will not displayed as globally
+        //  } 
+        // //  addTwo(30,40.5);
+        //  let c = addTwo(50,40); // have to difine c globally
          
-         document.write("<br>","<br>");
-         document.write("dispying globlly = ",c);
+        //  document.write("<br>","<br>");
+        //  document.write("dispying globlly = ",c);
+        }
 
 
 
